@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yvett Forrester" />
+    <meta name="description" content="Time Traveler's Quest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+    <!-- link GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- link JavaScript -->
+    <script src="./js/script.js"></script>
+    <title>Time Traveler's Quest</title>
+</head>
+<body>
+    <main>
+         <!-- intro -->
+         <section class="intro">
+            <object data="./images/intro.svg" type="image/svg+xml" id="intro"></object>
+        </section>
+        <!-- menu -->
+        <section class="sect">
+            <div class="logo"><img src="./images/logo.png" alt="logo">
+                <h1>Time Traveler's Quest</h1>
+            </div>
+            <object data="./images/puzzle1/puzzle1.svg" type="image/svg+xml" id="obj0" class="puzzleStyle"></object>
+            <object data="./images/puzzle2/puzzle2.svg" type="image/svg+xml" id="obj1" class="puzzleStyle"></object>
+            <object data="./images/puzzle3/puzzle3.svg" type="image/svg+xml" id="obj2" class="puzzleStyle"></object>
+            <object data="./images/puzzle4/puzzle4.svg" type="image/svg+xml" id="obj3" class="puzzleStyle"></object>
+        </section>
+
+        <!-- scene 1 -->
+        <section class="sect1">
+            <object data="./images/puzzle1/puzzle1.svg" type="image/svg+xml" id="scene1"></object>
+        </section>
+        <!-- scene 2 -->
+        <section class="sect2">
+            <object data="./images/puzzle2/puzzle2.svg" type="image/svg+xml" id="scene2"></object>
+        </section>
+        <!-- scene 3 -->
+        <section class="sect3">
+            <object data="./images/puzzle3/puzzle3.svg" type="image/svg+xml" id="scene3"></object>
+        </section>
+        <!-- scene 4 -->
+        <section class="sect4">
+            <object data="./images/puzzle4/puzzle4.svg" type="image/svg+xml" id="scene4"></object>
+        </section>
+
+        <!-- board -->
+        <section class="board">
+            <div class="boardLeft">
+                <img src="./images/box.svg" alt="hidden item 1" class="boardStyle" id="item0" />
+                <img src="./images/box.svg" alt="hidden item 2" class="boardStyle" id="item1" />
+                <img src="./images/box.svg" alt="hidden item 3" class="boardStyle" id="item2" />
+                <img src="./images/box.svg" alt="hidden item 4" class="boardStyle" id="item3" />
+                <img src="./images/box.svg" alt="hidden item 5" class="boardStyle" id="item4" />
+                <div class="boardRight">
+                    <div class="buttons" alt="button1" id="btn0">Shuffle</div>
+                    <div class="buttons" alt="button2" id="btn1">Home</div>
+                </div>
+                <div class="boardRight">
+                    <div class="scoreStyle">
+                        <div id="score">Score: 0</div>
+                    </div>
+                    <div class="scoreStyle">
+                        <p id="timer">00:00</p>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
